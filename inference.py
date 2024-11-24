@@ -105,8 +105,7 @@ def main(args):
         ################################### save results to output folder. ###########################################
         save_to_mp4(
             _video_frames, 
-            f"{args.output_dir}/{os.path.basename(task.ref_video_path).split('.')[0]}" \
-            f"_{datetime.now().strftime('%Y%m%d%H%M%S')}.mp4",
+            "/mimicmotion/output.mp4",
             fps=task.fps,
         )
 
