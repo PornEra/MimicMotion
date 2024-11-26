@@ -105,7 +105,7 @@ def main(args):
         ################################### save results to output folder. ###########################################
         save_to_mp4(
             _video_frames, 
-            "/mimicmotion/output.mp4",
+            f"/outputs/{args.output_name}.mp4",
             fps=task.fps,
         )
 
@@ -123,6 +123,7 @@ if __name__ == "__main__":
     parser.add_argument("--log_file", type=str, default=None)
     parser.add_argument("--inference_config", type=str, default="configs/test.yaml") #ToDo
     parser.add_argument("--output_dir", type=str, default="outputs/", help="path to output")
+    parser.add_argument("--output_name", type=str, help="name to output")
     parser.add_argument("--no_use_float16",
                         action="store_true",
                         help="Whether use float16 to speed up inference",
