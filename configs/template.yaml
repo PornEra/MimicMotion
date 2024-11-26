@@ -1,0 +1,20 @@
+# base svd model path
+base_model_path: stabilityai/stable-video-diffusion-img2vid-xt-1-1
+
+# checkpoint path
+ckpt_path: /mimicmotion/models/MimicMotion_1-1.pth
+
+test_case:
+  - ref_video_path: /mimicmotion/assets/example_data/videos/[task_id].mp4
+    ref_image_path: /mimicmotion/assets/example_data/images/[task_id].jpg
+    num_frames: [num_frames]
+    resolution: [resolution]
+    frames_overlap: [frames_overlap]
+    num_inference_steps: [num_inference_steps]
+    noise_aug_strength: [noise_aug_strength]
+    guidance_scale: [guidance_scale]
+    sample_stride: [sample_stride]
+    fps: [fps]
+    seed: [seed]
+
+
