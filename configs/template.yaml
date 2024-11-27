@@ -5,8 +5,8 @@ base_model_path: stabilityai/stable-video-diffusion-img2vid-xt-1-1
 ckpt_path: /mimicmotion/models/MimicMotion_1-1.pth
 
 test_case:
-  - ref_video_path: /mimicmotion/assets/example_data/videos/[task_id].mp4
-    ref_image_path: /mimicmotion/assets/example_data/images/[task_id].jpg
+  - ref_video_path: [ref_video_path]
+    ref_image_path: [ref_image_path]
     num_frames: [num_frames]
     resolution: [resolution]
     frames_overlap: [frames_overlap]
